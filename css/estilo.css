@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+.rubik-iso-regular {
+    font-family: "Rubik Iso", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  :root {
+    --red: rgb(176, 8, 8); 
+  }
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+header {
+    background-color: var(--red);
+    height: 150px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 20%;
+    background-color: yellow;
+    padding: 10PX;
+}
+
+#cards {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+#cards div {
+    text-align: center;
+    width: 33.33%;
+    height: 100px;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Mobile - 0px a 360px */
+
+@media screen and (min-width:0) and (max-width:360px) {
+    body {
+        background-color: black;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #cards {
+    flex-direction: column;
+    }
+    
+    #cards div {
+    width: 100%;
+    }
+}
